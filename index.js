@@ -131,14 +131,26 @@ function esPar(numero) {
 }
 
 // Ejercicio 22
-const arrayFuncs = [suma, resta, multiplicacion];
-// Definición de funciones necesarias para el ejercicio 22
+// Definición de funciones necesarias
 function suma(a, b) {
     return a + b;
 }
 function resta(a, b) {
     return a - b;
 }
+function multiplicacion(a, b) {
+    return a * b;
+}
+// Creación del array con las funciones
+const arrayFuncs = [suma, resta, multiplicacion];
+// Ejemplo de uso
+const resultadoSuma = arrayFuncs[0](4, 2); // Llama a la función suma: 4 + 2
+const resultadoResta = arrayFuncs[1](4, 2); // Llama a la función resta: 4 - 2
+const resultadoMultiplicacion = arrayFuncs[2](4, 2); // Llama a la función multiplicación: 4 * 2
+console.log(resultadoSuma); // Output: 6
+console.log(resultadoResta); // Output: 2
+console.log(resultadoMultiplicacion); // Output: 8
+
 
 // Ejercicio 23
 function ordenarArray2(array) {
